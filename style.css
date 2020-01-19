@@ -1,4 +1,138 @@
+/* table of contents
+
+    1. global styles
+
+    2. typography
+
+    3. components
+      3.1. buttons
+
+
+      */
+
+/* ### Primary
+
+- Cyan: hsl(180, 66%, 49%)
+- Dark Violet: hsl(257, 27%, 26%)
+
+### Secondary
+
+- Red: hsl(0, 87%, 67%)
+
+### Neutral
+
+- Gray: hsl(0, 0%, 75%)
+- Grayish Violet: hsl(257, 7%, 63%)
+- Very Dark Blue: hsl(255, 11%, 22%)
+- Very Dark Violet: hsl(260, 8%, 14%) */
+:root {
+  --cyan: hsl(180, 66%, 49%);
+  --dark-violet: hsl(257, 27%, 26%);
+
+  --red: hsl(0, 87%, 67%);
+
+  --gray: hsl(0, 0%, 75%);
+  --grayish-violet: hsl(257, 7%, 63%);
+  --very-dark-blue: hsl(255, 11%, 22%);
+  --very-dark-violet: hsl(260, 8%, 14%);
+}
+
 body {
   padding: 0;
   margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: var(--gray);
+}
+
+.header {
+  margin-top: 25px;
+  margin-left: 25px;
+}
+
+.main {
+  overflow: hidden;
+}
+
+.menu {
+  text-align: right;
+  color: var(--gray);
+  transform: translateX(180px);
+}
+
+.main-bg {
+  width: 500px;
+  margin-top: 20px;
+}
+
+.landing {
+  margin: 20px;
+}
+
+.landing-title {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.landing-description {
+  margin-top: 5px;
+  color: var(--gray);
+  font-size: 18px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.action-1 {
+  width: 200px;
+  height: 60px;
+  margin-top: 40px;
+  position: relative;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--cyan);
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 50px;
+  box-shadow: none;
+  border-style: none;
+}
+
+.form-container {
+  height: 150px;
+  width: 300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background: var(--dark-violet);
+  overflow: hidden;
+}
+
+.mobile-circle {
+  position: relative;
+  left: 85px;
+  top: -130px;
+  z-index: 0;
+}
+
+.shorten {
+  z-index: 1;
+  position: relative;
+  height: 45px;
+  width: 255px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  border-style: none;
+  margin-top: 19px;
+}
+
+.shorten-btn {
+  background: var(--cyan);
+  font-size: 18px;
+  font-weight: 700;
+  color: white;
 }
