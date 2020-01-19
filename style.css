@@ -163,6 +163,7 @@ body {
 .box {
   width: 320px;
   height: 300px;
+  margin: 100px 0;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -170,24 +171,40 @@ body {
   background: white;
 }
 
-.stats-img {
+.img {
   position: relative;
   top: -100px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.brand-recognition-title {
+.img-lower {
+  top: 28px;
+  z-index: 2;
+}
+
+.title {
   text-align: center;
   position: relative;
   top: -70px;
   font-size: 24px;
 }
 
-.brand-recognition-description {
+.description {
   position: relative;
   top: -70px;
   color: var(--gray);
   margin: 10px;
   text-align: center;
+}
+
+.line {
+  background: var(--cyan);
+  height: 600px;
+  width: 8px;
+  position: relative;
+  top: -900px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: -1;
 }
