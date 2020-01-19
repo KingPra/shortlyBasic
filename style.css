@@ -30,7 +30,7 @@
   --dark-violet: hsl(257, 27%, 26%);
 
   --red: hsl(0, 87%, 67%);
-
+  --lt-gray: rgb(240, 241, 246);
   --gray: hsl(0, 0%, 75%);
   --grayish-violet: hsl(257, 7%, 63%);
   --very-dark-blue: hsl(255, 11%, 22%);
@@ -41,7 +41,7 @@ body {
   padding: 0;
   margin: 0;
   font-family: "Poppins", sans-serif;
-  background: var(--gray);
+  background: var(--lt-gray);
 }
 
 .header {
@@ -135,4 +135,59 @@ body {
   font-size: 18px;
   font-weight: 700;
   color: white;
+}
+
+.advanced-container {
+  margin: 60px 0;
+  font-size: 18px;
+  text-align: center;
+}
+
+.advanced-description {
+  font-weight: 500;
+  color: var(--gray);
+}
+
+.circle {
+  background: var(--dark-violet);
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  text-align: c;
+  position: relative;
+  top: -40px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.box {
+  width: 320px;
+  height: 300px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background: white;
+}
+
+.stats-img {
+  position: relative;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.brand-recognition-title {
+  text-align: center;
+  position: relative;
+  top: -70px;
+  font-size: 24px;
+}
+
+.brand-recognition-description {
+  position: relative;
+  top: -70px;
+  color: var(--gray);
+  margin: 10px;
+  text-align: center;
 }
