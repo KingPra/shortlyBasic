@@ -83,7 +83,7 @@ body {
   text-align: center;
 }
 
-.action-1 {
+.action-btn {
   width: 200px;
   height: 60px;
   margin-top: 40px;
@@ -106,7 +106,7 @@ body {
   position: relative;
   left: 50%;
   transform: translateX(-50%);
-  border-radius: 10px;
+  border-radius: 5px;
   background: var(--dark-violet);
   overflow: hidden;
 }
@@ -160,6 +160,10 @@ body {
   transform: translateX(-50%);
 }
 
+.lower-circle {
+  top: -80px;
+}
+
 .box {
   width: 320px;
   height: 300px;
@@ -179,7 +183,7 @@ body {
 }
 
 .img-lower {
-  top: 28px;
+  top: -12px;
   z-index: 2;
 }
 
@@ -207,4 +211,38 @@ body {
   left: 50%;
   transform: translateX(-50%);
   z-index: -1;
+}
+
+.boost-container {
+  background: var(--dark-violet);
+  position: relative;
+  top: -620px;
+  height: 300px;
+}
+
+.boost-title {
+  position: relative;
+  top: -220px;
+  color: white;
+  font-size: 26px;
+  text-align: center;
+}
+
+.btn-2 {
+  top: -230px;
+}
+
+footer {
+  position: relative;
+  transform: translate(-50%, -50%);
+  top: -370px;
+  left: 50%;
+  background: var(--very-dark-violet);
+  text-align: center;
+}
+
+.footer-title {
+  color: white;
+  font-size: 30px;
+  font-weight: 700;
 }
